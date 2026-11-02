@@ -7,15 +7,22 @@
 <!-- Head Section -->
 
 <head>
+
+<meta name="geo.region" content="ZA-GP">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gen to Gen Foundation | About Us</title>
+    <title>About Us | Gen to Gen Foundation</title>
+<meta name="description" content="Discover the background, mission and vision of Gen to Gen Foundation and its commitment to community development.">
+<meta name="keywords" content="about Gen to Gen Foundation, foundation mission, community organisation, youth support">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+ <script src="js/script.js" defer></script>   
 
     <!-- Header Section -->
 
@@ -44,6 +51,45 @@
 <!-- Main About Section -->
 
     <main>
+
+<!-- Community Image Gallery -->
+<section class="gallery-section">
+    <h2>Our Community Activities</h2>
+
+    <p>
+        Explore some of the activities and initiatives
+        associated with the foundation.
+    </p>
+
+    <div class="image-gallery">
+
+        <img
+            src="images/hero.jpg"
+            alt="Gen to Gen Foundation community activities"
+            class="gallery-image"
+            tabindex="0">
+
+        <img
+            src="images/mentorship.jpg"
+            alt="Mentorship and guidance activities"
+            class="gallery-image"
+            tabindex="0">
+
+        <img
+            src="images/soup-kitchen.jpg"
+            alt="Community soup kitchen activities"
+            class="gallery-image"
+            tabindex="0">
+
+        <img
+            src="images/youth.jpg"
+            alt="Youth development activities"
+            class="gallery-image"
+            tabindex="0">
+
+    </div>
+</section>
+
 
         <img src="images/community.jpg"
             srcset="images/community.jpg 1200w",
@@ -161,3 +207,30 @@
             </p>
 
         </section>
+
+    <p>
+    To learn more about our work, explore
+    <a href="services.html">our services</a>.
+</p>    
+
+        <!-- Lightbox -->
+<div id="lightbox" class="lightbox" role="dialog"
+    aria-modal="true" aria-label="Enlarged image" hidden>
+
+    <button type="button" id="closeLightbox"
+        class="lightbox-close" aria-label="Close image">
+        &times;
+    </button>
+
+    <button type="button" id="previousImage"
+        class="lightbox-navigation" aria-label="Previous image">
+        &#10094;
+    </button>
+
+    <img id="lightboxImage" src="" alt="">
+
+    <button type="button" id="nextImage"
+        class="lightbox-navigation" aria-label="Next image">
+        &#10095;
+    </button>
+</div>

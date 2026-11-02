@@ -10,12 +10,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gen to Gen Foundation | Enquiry</title>
+    <title>Make an Enquiry | Gen to Gen Foundation</title>
+<meta name="description" content="Enquire about Gen to Gen Foundation services, volunteering opportunities and sponsorship.">
+<meta name="keywords" content="foundation enquiry, volunteer opportunities, sponsorship, community programmes">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+<script src="js/script.js" defer></script>
 
 <!-- Header Section -->
 
@@ -112,3 +116,44 @@
                             id="phone"
                             name="phone">
                     </p>
+
+<!-- Enquiry Form -->
+<section class="enquiry-section">
+    <h2>Make an Enquiry</h2>
+
+    <p>
+        Complete this form to enquire about our services,
+        volunteering or sponsorship opportunities.
+    </p>
+
+    <form
+    id="enquiryForm"
+    name="enquiry"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    action="/thank-you.html"
+    novalidate>
+
+    <input type="hidden" name="form-name" value="enquiry">
+
+    <p hidden>
+        <label>
+            Do not fill this in:
+            <input name="bot-field">
+        </label>
+    </p>
+
+
+        <button type="submit">Submit Enquiry</button>
+        <button type="reset">Clear Form</button>
+
+        <p id="enquiryError" class="form-error"
+            role="alert"></p>
+
+        <div id="enquiryResponse"
+            class="form-response"
+            aria-live="polite"></div>
+
+    </form>
+</section>                    

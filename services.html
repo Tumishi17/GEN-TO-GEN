@@ -7,15 +7,22 @@
 <!-- Head Section -->
 
 <head>
+
+<meta name="geo.region" content="ZA-GP">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gen to Gen Foundation | Services</title>
+    <title>Our Services | Gen to Gen Foundation</title>
+<meta name="description" content="Explore the services and community initiatives offered by Gen to Gen Foundation, including youth development, mentorship and community support.">
+<meta name="keywords" content="Gen to Gen services, youth development, mentorship programmes, community support">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+<script src="js/script.js" defer></script>
 
 <!-- Header Section -->
 
@@ -55,6 +62,58 @@
                 communities, empowering young people and encouraging
                 positive social change.
             </p>
+
+<!-- Service Search -->
+<section class="service-search-section">
+    <h2>Explore Our Services</h2>
+
+    <label for="serviceSearch">Search for a service:</label>
+
+    <input
+        type="search"
+        id="serviceSearch"
+        placeholder="Search services..."
+        aria-describedby="searchMessage">
+
+    <p id="searchMessage" aria-live="polite">
+        Showing all services.
+    </p>
+
+    <div id="serviceList">
+
+        <article class="service-card">
+            <h3>Youth Development</h3>
+            <p>
+                Programmes that aim to support young people
+                and their personal development.
+            </p>
+        </article>
+
+        <article class="service-card">
+            <h3>Mentorship</h3>
+            <p>
+                Guidance and support to help individuals
+                develop their skills and potential.
+            </p>
+        </article>
+
+        <article class="service-card">
+            <h3>Community Support</h3>
+            <p>
+                Activities that contribute to community
+                development and assistance.
+            </p>
+        </article>
+
+        <article class="service-card">
+            <h3>Soup Kitchen</h3>
+            <p>
+                Community food support initiatives.
+            </p>
+        </article>
+
+    </div>
+</section>
 
         </section>
 
@@ -196,6 +255,61 @@
             </article>
 
         </section>
+
+<!-- Frequently Asked Questions -->
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <button class="accordion-button" type="button"
+            aria-expanded="false">
+            What services does Gen to Gen Foundation provide?
+        </button>
+
+        <div class="accordion-content" hidden>
+            <p>
+                Gen to Gen Foundation provides community support,
+                youth development, mentorship and related
+                programmes. Contact the organisation for further
+                information about current activities.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="accordion-button" type="button"
+            aria-expanded="false">
+            How can I become a volunteer?
+        </button>
+
+        <div class="accordion-content" hidden>
+            <p>
+                You can submit an enquiry through the Enquiry page
+                to express your interest in volunteering.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="accordion-button" type="button"
+            aria-expanded="false">
+            Can I support the foundation?
+        </button>
+
+        <div class="accordion-content" hidden>
+            <p>
+                You can contact the foundation to enquire about
+                sponsorship and other ways of supporting its work.
+            </p>
+        </div>
+    </div>
+</section>
+        
+<p>
+    Interested in our programmes?
+    Visit our <a href="enquiry.html">Enquiry page</a>
+    to ask about available opportunities.
+</p>
 
     </main>
 
